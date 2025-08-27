@@ -55,6 +55,8 @@ const Task = mongoose.model('Task', TaskSchema);
 const Payout = mongoose.model('Payout', PayoutSchema);
 const Click = mongoose.model('Click', ClickSchema);
 
+const API_BASE = 'https://watchearns.online/api';
+
 // USERS
 app.get('/api/users', async (req, res) => {
     res.json(await User.find());
